@@ -80,6 +80,9 @@ alias python="python3"
 # https://kubernetes.io/docs/tasks/tools/
 alias k="kubectl"
 
+# brew install kubectx
+alias kx="kubectx"
+
 # pnpm
 # asdf로 설치
 alias p="pnpm"
