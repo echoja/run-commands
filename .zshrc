@@ -52,7 +52,8 @@ eval "$(direnv hook zsh)"
 
 
 # 기본 PATH
-export PATH="$PATH:/opt/homebrew/opt/ruby/bin:$HOME/bin:$HOME/.yarn/bin:$HOME/.local/bin:$HOME/Library/Android/sdk/platform-tools:/Applications/Visual Studio Code - Insiders.app/Contents/Resources/app/bin:/Applications"
+export PATH="$PATH:/opt/homebrew/opt/ruby/bin:$HOME/bin:$HOME/.yarn/bin:$HOME/.local/bin:$HOME/Library/Android/sdk/platform-tools:/Applications/Visual Studio Code.app/Contents/Resources/app/bin:/Applications"
+# export PATH="$PATH:/opt/homebrew/opt/ruby/bin:$HOME/bin:$HOME/.yarn/bin:$HOME/.local/bin:$HOME/Library/Android/sdk/platform-tools:/Applications/Visual Studio Code - Insiders.app/Contents/Resources/app/bin:/Applications"
 
 # ##############################################################################
 # ######## 사용자정의 alias 또는 function 추가 #################################
