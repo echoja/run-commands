@@ -76,6 +76,7 @@ alias e="exit"
 # python
 alias py="python3"
 alias python="python3"
+alias pip="pip3"
 
 # kubectl
 # https://kubernetes.io/docs/tasks/tools/
@@ -108,6 +109,9 @@ export SKIM_DEFAULT_COMMAND="fd --type f || git ls-tree -r --name-only HEAD || r
 # brew tap hashicorp/tap
 # brew install hashicorp/tap/terraform
 alias tf="terraform"
+
+# mysql
+export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
 
 # ls 더 나은 버전
 # brew install eza
