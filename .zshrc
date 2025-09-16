@@ -93,6 +93,10 @@ alias p="pnpm"
 # brew install curlie
 alias c="curlie"
 
+# codex
+# brew install codex
+alias cdx="codex -m gpt-5-codex -c model_reasoning_effort=high --search"
+
 # source
 alias s="source ~/.zshrc"
 
