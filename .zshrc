@@ -53,7 +53,9 @@ eval "$(direnv hook zsh)"
 
 # 기본 PATH
 export PATH="$PATH:/opt/homebrew/opt/ruby/bin:$HOME/bin:$HOME/.yarn/bin:$HOME/.local/bin:$HOME/Library/Android/sdk/platform-tools:/Applications/Visual Studio Code.app/Contents/Resources/app/bin:/Applications"
-# export PATH="$PATH:/opt/homebrew/opt/ruby/bin:$HOME/bin:$HOME/.yarn/bin:$HOME/.local/bin:$HOME/Library/Android/sdk/platform-tools:/Applications/Visual Studio Code - Insiders.app/Contents/Resources/app/bin:/Applications"
+
+# go (https://go.dev/doc/install)
+export PATH="/usr/local/go/bin:$PATH"
 
 # ##############################################################################
 # ######## 사용자정의 alias 또는 function 추가 #################################
@@ -220,6 +222,21 @@ export GPG_TTY=$(tty)
 export PATH="/Users/th.kim/.codeium/windsurf/bin:$PATH"
 
 
+
+# pnpm
+export PNPM_HOME="/Users/th.kim/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
+# bun completions
+[ -s "/Users/th.kim/.bun/_bun" ] && source "/Users/th.kim/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
 
 # Amazon Q post block. Keep at the bottom of this file.
 [[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh"
